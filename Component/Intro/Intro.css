@@ -1,0 +1,75 @@
+    #intro {
+        height: calc(100vh - 4rem);
+        width: 100vw;
+        max-width: 75rem;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .gym {
+        position: absolute;
+        top: -4rem ;
+        right: 0;
+        z-index: -1;
+        object-fit: cover;
+        height: 100%;
+        max-width: 100%;
+     
+    }
+
+
+    .introcontent {
+        padding: 2rem;
+        height: 100vh;
+        width: 100vw;
+        font-size: 4rem;
+        font-weight: 700;
+        z-index: 2;
+    }
+    .hello{
+        font-size: 1.5vw;
+        font-weight: 200;
+    }
+    .introname{
+        color: yellow;
+    }
+    .introaboutme{
+        font-size: 1.2vw;
+        font-weight: 100;
+    }
+    .introbtn{
+        background-color: white;
+        color: black;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1.5rem;
+        border: none;
+        font-weight: bold;
+        font-size: 1vw;
+        cursor: pointer;
+    }
+
+
+    @media screen and ( max-width:650px) {
+        .gym{
+            height: 100%;
+            max-width: 100%;
+          
+        }
+        .introcontent{
+            font-size: 15vw;
+        }
+        .introaboutme{
+            font-size: 5vw;
+        }
+    }
+
+    @media screen and (max-width:490px) { 
+
+        .gym{
+            height: 100%;
+            max-width: 100%;
+        }
+        .navbar{
+            overflow: hidden;
+        }
+    }
