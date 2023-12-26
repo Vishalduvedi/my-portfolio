@@ -1,0 +1,91 @@
+
+.navbar{
+    background-color:rgb(30,30,30) ;
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 100%;
+    max-width: 73rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.gymlogo{
+    object-fit: cover;
+    height:5rem ;
+    width:5rem ;
+    border-radius: 1rem;
+}
+.desktopmenulistitem{
+    margin: 2rem;
+    cursor: pointer;
+}
+.desktopmenulistitem:hover{
+    border-bottom:2px solid ;
+    border-color:yellow ;
+    color: yellow;
+    padding-bottom: 0.5rem;
+}
+.desktopmenubtn{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    background-color: white;
+    color: black;
+    height:2.5rem ;
+    width:7rem ;
+    font-weight: bold;
+    cursor: pointer;
+}
+.desktopmenuimg{
+    height:2rem ;
+    width:2rem ;
+  color: aliceblue;
+}
+.active{
+    color: yellow;
+padding-bottom: 0.5rem;
+    border-bottom: 2.5px solid yellow;
+}
+.navmenu{
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background:rgb(40,40,40);
+    border-radius: 1rem;
+}
+.listitem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+}
+.mobmenu{
+    display: none;
+    object-fit: cover;
+    
+}
+@media screen and (max-width:770px) {
+    .mobmenu{
+        display: flex;
+    }
+    .desktopmenu{
+        display: none;
+
+    }
+    .desktopmenubtn{
+        display: none;
+    }
+}
