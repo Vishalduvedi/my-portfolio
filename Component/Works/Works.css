@@ -1,0 +1,49 @@
+#work{
+    margin: 0 auto;
+    min-height: calc(100vh-4rem);
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.worksittle{
+    margin: 1rem 0;
+}
+.worksdesc{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.worksimgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 65rem;
+    flex-wrap: wrap;
+}
+.worksimg{
+    object-fit: cover;
+    height: 18rem;
+    width: 15rem;
+    margin: 0.5rem;
+     box-sizing: border-box;
+     border-radius: 0.5rem;
+}
+.worksbtn{
+    margin: 3rem 0;
+    padding: 0.8rem 1.8rem;
+    background-color: white;
+    border: none;
+    border-radius:2rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+@media screen and (max-width:585) {
+    .worksimg{
+        height: 15rem;
+    }
+    
+}
